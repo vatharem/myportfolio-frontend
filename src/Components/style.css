@@ -1,0 +1,28 @@
+.about-section {
+    /*background-color: transparent;*/
+  }
+  
+  .about-section h2 {
+    color: #00aaff;
+  }
+  
+  .about-section img {
+    max-width: 100%;
+    border: 6px solid white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-section img:hover {
+    transform: scale(1.04);
+  }
+  .glow-effect {
+    border: 3px solid #00aaff;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .glow-effect:hover {
+    transform: scale(1.05);
+  }
+  
