@@ -25,7 +25,7 @@ const Contact = () => {
     try {
        const API = import.meta.env.VITE_API_URL || "https://mayuri-portfolio-backend.onrender.com";
 
-      await axios.post(`${API}/api/contact`, formData);
+      await axios.post(`${API}/contact`, formData);
       setStatus("✅ Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
 

@@ -8,13 +8,14 @@ const Login = () => {
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
 
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
           const API = import.meta.env.VITE_API_URL;
 
-    const res = await axios.post(`${API}/api/users/login`, { email, password });
+    const res = await axios.post(`${API}/users/login`, { email, password });
 
 
       if (res.data.status === "success") {
