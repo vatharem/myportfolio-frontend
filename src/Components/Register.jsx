@@ -25,7 +25,7 @@ const Register = () => {
     }
 
     try {
-      const API = "https://mayuri-portfolio-backend.onrender.com";
+      const API = import.meta.env.VITE_API_URL;
 
       const res = await axios.post(`${API}/api/users/register`, {
         name: user.name,

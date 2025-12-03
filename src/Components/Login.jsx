@@ -12,12 +12,10 @@ const Login = () => {
     e.preventDefault();
 
     try {
-          const API = "https://mayuri-portfolio-backend.onrender.com";
+          const API = import.meta.env.VITE_API_URL;
 
+    const res = await axios.post(`${API}/api/users/login`, { email, password });
 
-    
-
-      const res = await axios.post(`${API}/api/users/login`, {email,password,});
 
       if (res.data.status === "success") {
         localStorage.setItem("user", JSON.stringify(res.data.user));
