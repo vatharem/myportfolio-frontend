@@ -23,7 +23,7 @@ const Contact = () => {
     setStatus("");
 
     try {
-       const API = import.meta.env.VITE_API_URL || "https://mayuri-portfolio-backend.onrender.com";
+       const API = import.meta.env.VITE_API_URL || "https://mayuri-portfolio-backend.onrender.com/api";
 
       await axios.post(`${API}/contact`, formData);
       setStatus("✅ Message sent successfully!");
